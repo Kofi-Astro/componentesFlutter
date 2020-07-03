@@ -20,7 +20,7 @@ class _ListViewPageState extends State<ListViewPage> {
     _crear10();
     _scrollController.addListener(() {
 
-      if (_scrollController.position.pixels == _scrollController.position.maxScrollExtent) {
+      if (_scrollController.position.pixels + 100 == _scrollController.position.maxScrollExtent) {
        // _crear10();
        _fetchData();
       }
